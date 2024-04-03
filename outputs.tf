@@ -1,9 +1,7 @@
-output "instance_id" {
-  description = "The ID of the EC2 instance"
-  value       = aws_instance.myinstance.id
+output "ami" {
+  value = "ami-12345678"
 }
 
-output "public_ip" {
-  description = "The public IP address of the EC2 instance"
-  value       = aws_instance.myinstance.public_ip
+output "instance_type" {
+  value = "t2.micro"
 }
